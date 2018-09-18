@@ -1,2 +1,2 @@
-# dotfiles-manjaro
-Dotfiles used on Manjaro Linux setup
+# Dotfiles Manjaro Linux
+Collection of dotfiles used on Manjaro Linux setup
