@@ -1,0 +1,9 @@
+# Register at https://openweathermap.org to get your API key
+api_key = "e4eb8d8faa5d792f63e278d21ea704c1"
+
+# Sydney, AU
+city_id = "2147714"
+
+# Display settings
+units = "metric"
+display_symbol = "°"
