@@ -14,9 +14,9 @@ XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 
-#include "~/.config/xresources/solarized.dark.color"
+#include "/home/gilberto/.config/xresources/solarized.dark.fixed.color"
 
 Xcursor.theme: Pop
 Xcursor.size: 32
 
-#include "~/.config/xresources/urxvt"
+#include "/home/gilberto/.config/xresources/urxvt"
