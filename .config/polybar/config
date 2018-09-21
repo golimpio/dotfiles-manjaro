@@ -40,7 +40,7 @@ line-color = #f00
 border-size = 0
 border-color = ${colors.foreground}
 
-padding-left = 3
+padding-left = 4
 padding-right = 3
 
 module-margin-left = 3
@@ -50,11 +50,12 @@ module-margin-right = 3
 font-0 = Roboto Condensed:size=20:weight=bold;6
 font-1 = Font Awesome 5 Free Regular:pixelsize=19;5
 font-2 = Font Awesome 5 Free Solid:pixelsize=19;5
-font-3 = Font Awesome 5 Brands Regular:pixelsize=19;5
-font-4 = Weather Icons:size=18:weight=bold;6
-font-5 = Material Icons:pixelsize=19;6
+font-3 = UbuntuCondensed Nerd Font:size=19;6
+font-4 = Font Awesome 5 Brands Regular:pixelsize=19;5
+font-5 = Weather Icons:size=18:weight=bold;6
+font-6 = Material Icons:pixelsize=19;6
 
-modules-left = i3 xwindow
+modules-left = menu i3 xwindow
 modules-center = date time
 modules-right = music xbacklight volume cpu filesystem battery wlan 
 
@@ -82,7 +83,8 @@ tray-padding = 10
 ;--------------------[ Current Window ]--------------------;
 [module/xwindow]
 type = internal/xwindow
-label = ↈ [ %title% ]
+;          
+label =  %title% 
 label-maxlen = 80
 format-underline = ${colors.black}
 
@@ -482,3 +484,11 @@ type = custom/script
 exec = ~/bin/openweathermap-simple.sh
 interval = 600
 label-font = 5
+
+
+
+;--------------------[ Launcher Menu ]--------------------;
+[module/menu]
+type = custom/text
+content = 
+click-left = morc_menu
