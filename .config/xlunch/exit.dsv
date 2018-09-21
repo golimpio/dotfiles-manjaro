@@ -1,0 +1,5 @@
+Lock;/home/gilberto/.config/xlunch/lock1.png;giba-lock
+Logout;/home/gilberto/.config/xlunch/exit.png;i3exit logout
+Suspend;/home/gilberto/.config/xlunch/suspend.png;i3exit suspend
+Reboot;/home/gilberto/.config/xlunch/reboot.png;i3exit reboot
+Shutdown;/home/gilberto/.config/xlunch/shutdown.png;i3exit shutdown
