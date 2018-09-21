@@ -82,7 +82,7 @@ tray-padding = 10
 ;--------------------[ Current Window ]--------------------;
 [module/xwindow]
 type = internal/xwindow
-label = ♣ %title% ]
+label = ↈ [ %title% ]
 label-maxlen = 80
 format-underline = ${colors.black}
 
@@ -110,7 +110,7 @@ index-sort = true
 
 ; Create click handler used to focus workspace
 ; Default: true
-enable-click = false
+enable-click = true
 
 ; Create scroll handlers used to cycle workspaces
 ; Default: true
