@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+! pgrep -fi "xcape -e F18 Escape" > /dev/null && xcape -e 'F18=Escape'
+rofi "$@"
+pkill -fi "xcape -e F18 Escape"
+
