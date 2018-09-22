@@ -191,7 +191,7 @@ label-visible-padding = 2
 ; Default: %icon%  %name%
 label-urgent = %index%
 label-urgent-background = ${colors.red}
-label-urgent-foreground = ${colors.white}
+label-urgent-foreground = #ffffff
 label-urgent-padding = 2
 
 ; Separator in between workspaces
