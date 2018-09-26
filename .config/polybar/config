@@ -45,7 +45,7 @@ offset-y = 0
 fixed-center = true
 
 ;background = ${colors.background}
-background = #f0002b36
+background = #40002b36
 foreground = ${colors.foreground}
 
 line-size = 0
