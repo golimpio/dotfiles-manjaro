@@ -93,6 +93,10 @@ tray-maxsize = 32
 ; Pad the sides of each tray icon
 tray-padding = 10
 
+tray-transparent = true
+;tray-background = ${colors.background}
+tray-background = #40002b36
+
 
 ;--------------------[ Current Window ]--------------------;
 [module/xwindow]
