@@ -13,4 +13,5 @@ rofi.fuzzy: true
 !rofi.window-format: ⩧ ⟦{w}⟧  ➝ {t}
 !rofi.window-format: ⟨{w}⟩ ➝ {t}
 !rofi.window-format: {w} ⟩ {t}
-rofi.window-format: {w} ➝ {t}
+!rofi.window-format: {w} ➝ {t}
+rofi.window-format: {w}  ›  {t}

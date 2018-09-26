@@ -1,0 +1,14 @@
+10System:    10Host manjarina 10Kernel 4.14.71-1-MANJARO x86_64 10bits 64 10Desktop i3 4.15.0.1 
+           10Distro Manjaro Linux 
+10Machine:   10Type Laptop 10System Dell 10product XPS 15 9550 10v N/A 10serial <filter> 
+           10Mobo Dell 10model 0N7TVV 10v A00 10serial <filter> 10UEFI Dell 10v 1.8.0 10date 07/18/2018 
+10Battery:   10ID-1 BAT0 10charge 55.9 Wh 10condition 68.7/84.0 Wh (82%) 
+10CPU:       10Quad Core Intel Core i7-6700HQ 10type MT MCP 10speed 1419 MHz 10min/max 800/3500 MHz 
+10Graphics:  10Device-1 Intel HD Graphics 530 10driver i915 10v kernel 
+           10Device-2 NVIDIA GM107M [GeForce GTX 960M] 10driver N/A 
+           10Display 10server X.Org 1.20.1 10driver intel 10resolution 3840x2160~60Hz 
+           10OpenGL 10renderer Mesa DRI Intel HD Graphics 530 (Skylake GT2) 10v 4.5 Mesa 18.2.1 
+10Network:   10Device-1 Broadcom Limited BCM43602 802.11ac Wireless LAN SoC 10driver brcmfmac 
+10Drives:    10Local Storage 10total 588.73 GiB 10used 18.10 GiB (3.1%) 
+10Info:      10Processes 219 10Uptime 9m 10Memory 15.53 GiB 10used 1.10 GiB (7.1%) 10Client shell wrapper 
+           10inxi 3.0.21 
