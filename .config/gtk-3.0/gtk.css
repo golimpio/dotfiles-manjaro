@@ -1,0 +1,42 @@
+.window-frame {
+  box-shadow: none;
+  margin: 0;
+}
+
+/* Remove dotted lines from GTK+ 3 applications */
+undershoot.top, undershoot.right, undershoot.bottom, undershoot.left { 
+  background-image: none; 
+}
+
+scrollbar slider {
+  /* Size of the slider */
+/*  
+  min-width: 20px;
+  min-height: 20px;
+*/
+}
+
+.scrollbar.contents,
+scrollbar contents {
+  /*background-color: #073642;*/
+}
+
+* {
+  -ThunarAbstractIconView-row-spacing: 30;
+  -ThunarAbstractIconView-column-spacing: 30;
+}
+
+.thunar treeview {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.thunar .frame {
+  padding: 20px 5px 20px 20px;
+  background-color: #11373F;
+}
+
+.thunar .sidebar {
+  /* top, right, bottom, left */
+  padding: 20px 15px 20px 15px;
+}
