@@ -1,6 +1,9 @@
 ! Base16 Solarized Dark
 ! Scheme: Ethan Schoonover (http://ethanschoonover.com/solarized)
 
+#define basexx #002731
+#define baseyy #003B4A
+#define base00 #002b36
 #define base00 #002b36
 #define base01 #073642
 #define base02 #586e75
@@ -57,6 +60,8 @@
 *color20:      base04
 *color21:      base06
 
+*color232:     basexx
+*color233:     baseyy
 
 ! base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21
 ! base02    #073642  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26

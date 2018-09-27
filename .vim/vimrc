@@ -6,9 +6,12 @@ call plug#begin('~/.vim/plugged')
 " Plugins go here
 Plug 'itchyny/lightline.vim'
 Plug 'bling/vim-bufferline'
-Plug 'kien/ctrlp.vim'
+Plug '/usr/bin/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'lifepillar/vim-solarized8'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call plug#end()
@@ -34,4 +37,28 @@ let g:lightline = {
   \         'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding']]
   \     }
   \ }
+
+" Hilight cursor line
+set cursorline
+highlight CursorLine ctermbg=232 cterm=bold
+
+" Dim line numbers
+highlight LineNr ctermfg=233
+
+" Fzf shortcuts
+map ; :Files<CR>
+map <C-P> :Files<CR>
+
+" NERDTree shortcut/settings
+map <C-o> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let NERDTreeShowHidden=1
+
+" Alt+leftarrow will go one window left, etc.
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
