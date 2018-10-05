@@ -47,6 +47,9 @@ bindsym $mod+Tab exec --no-startup-id /home/gilberto/bin/focus_next_window.py
 # launch categorized menu
 bindsym $mod+F18 exec --no-startup-id /home/gilberto/bin/morc_f18
 
+# launch power menu
+bindsym Mod1+F18 exec --no-startup-id /home/gilberto/bin/power.sh
+
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################

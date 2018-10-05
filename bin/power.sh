@@ -27,16 +27,18 @@ chosen=$(echo -e "\
 # Info about some states are available here:
 # https://www.freedesktop.org/software/systemd/man/systemd-sleep.conf.html#Description
 
-if [[ $chosen = " Lock" ]]; then
-	jwm -exit
-if [[ $chosen = " Logout" ]]; then
-	jwm -exit
+if [[ $chosen = " Display Off" ]]; then
+	sleep 1; xset dpms force off; giba-lock &; disown
+elif [[ $chosen = " Lock" ]]; then
+	giba-lock &; disown
+elif [[ $chosen = " Logout" ]]; then
+	i3exit logout
 elif [[ $chosen = " Shutdown" ]]; then
-	systemctl poweroff
+	i3exit shutdown
 elif [[ $chosen = " Reboot" ]]; then
-	systemctl reboot
+	i3exit reboot
 elif [[ $chosen = " Suspend" ]]; then
-	systemctl suspend
+	i3exit suspend
 elif [[ $chosen = " Hibernate" ]]; then
-	systemctl hibernate
+	i3exit hibernate
 fi
