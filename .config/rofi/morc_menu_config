@@ -1,10 +1,11 @@
-rofi.theme: /home/gilberto/.config/rofi/morc.rasi
+!rofi.theme: /home/gilberto/.config/rofi/morc.rasi
+rofi.theme: /home/gilberto/.config/rofi/solarized.rasi
 
 rofi.font: PT Sans Narrow 28
 
 rofi.columns: 1
-rofi.lines: 14
+rofi.lines: 13
 
-rofi.location: 7 
-rofi.yoffset: -50
+!rofi.location: 7 
+!rofi.yoffset: -50
 rofi.width: 20

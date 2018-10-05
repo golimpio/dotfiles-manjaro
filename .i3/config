@@ -45,7 +45,7 @@ bindsym Shift+F18 exec --no-startup-id /home/gilberto/bin/rofi_f18 -show window
 bindsym $mod+Tab exec --no-startup-id /home/gilberto/bin/focus_next_window.py
 
 # launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
+bindsym $mod+F18 exec --no-startup-id /home/gilberto/bin/morc_f18
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -70,8 +70,8 @@ bindsym $mod+F3 exec thunar
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu thunar
 bindsym $mod+F5 exec terminal -e 'mocp'
-bindsym $mod+t exec --no-startup-id "pkill compton; exec notify-send 'Composition manager killed'"
-bindsym $mod+Ctrl+t exec --no-startup-id "~/bin/start_compton.sh; exec notify-send 'Composition manager restarted'"
+bindsym $mod+t exec --no-startup-id "pkill compton; exec notify-send 'Composition manager turned off'"
+bindsym $mod+Ctrl+t exec --no-startup-id "~/bin/start_compton.sh; exec notify-send 'Composition manager turned on'"
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'Dunst was restarted'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -84,7 +84,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer set Master 2%+ && voln
 bindsym XF86AudioLowerVolume exec --no-startup-id "amixer set Master 2%- && volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1)"
 bindsym XF86AudioMute exec --no-startup-id "amixer set Master toggle && if amixer get Master | grep -Fq '[off]'; then volnoti-show -m; else volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1); fi"
 
-# Screen brightness controls with a like vilnoti popup ( AUR: volnoti-brightness-git )
+# Screen brightness controls with a like volnoti popup ( AUR: volnoti-brightness-git )
 #bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 2 && volnoti-show -s /usr/share/pixmaps/volnoti/display-brightness-symbolic.svg $(xbacklight -get)"
 #bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 2 && volnoti-show -s /usr/share/pixmaps/volnoti/display-brightness-symbolic.svg $(xbacklight -get)"
 
@@ -208,8 +208,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
-# ‣ ⟿ ❖ ᐈ ↀ ⇲ ⇱ ⊳ ⋐⋑ ⌘ ⍟ ✱ ♻ ♺ ☢
-for_window [class=".*"] title_format "  <span font='Material Icons 11'>⨁</span>  <span font='PT Sans Narrow 11'>%title</span>"
+# ‣ ⟿ ❖ ᐈ ↀ ⇲ ⇱ ⊳ ⋐⋑ ⌘ ⍟ ✱ ♻ ♺ ☢ ☉       
+for_window [class=".*"] title_format "<span font='PT Sans Narrow 12'> </span><span font='PT Sans Narrow 11'>❖ %title</span>"
 for_window [title="About Pale Moon"] floating enable 
 for_window [class="Agave"] floating enable border normal 3
 for_window [title="alsamixer"] floating enable border normal 3

@@ -69,7 +69,7 @@ font-4 = Font Awesome 5 Brands Regular:pixelsize=19;5
 font-5 = Weather Icons:size=18:weight=bold;6
 font-6 = Material Icons:pixelsize=19;6
 
-modules-left = menu i3 xwindow
+modules-left = i3 xwindow
 modules-center = date time
 modules-right = music xbacklight volume cpu filesystem battery wlan 
 
@@ -103,7 +103,7 @@ tray-background = #40002b36
 type = internal/xwindow
 ;          
 label =  %title% 
-label-maxlen = 80
+label-maxlen = 90
 format-underline = ${colors.black}
 
 

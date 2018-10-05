@@ -1,0 +1,7 @@
+rofi.theme: /home/gilberto/.config/rofi/solarized.rasi
+
+rofi.font: PT Sans Narrow 28
+
+rofi.columns: 1
+rofi.lines: 8
+rofi.width: 15
